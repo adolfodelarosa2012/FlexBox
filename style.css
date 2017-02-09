@@ -1,0 +1,49 @@
+.container{
+    display : flex; /* Uso de Flex. Todo lo pone en linea anulando el comportamiento por default de los componentes*/
+    flex-flow: row wrap; /* Un row que puede ocupar varias lineas (nunca aparece el scroll horizontal las cosas se ban bajando); Si en lugar de eso usara nowrap todo se queda en una sola línea y aparece el scroll horizontal*/
+}
+
+img{
+    max-width: 100%;
+    height: 250px;
+}
+
+.inmueble-item{
+    display : flex;
+    flex-direction: column; /*Con esto hace que lo que este dentro de este contenedor se ponga uno encima de otro en una sola columna*/
+}
+
+.inmueble-item img{
+    order: -1; /*Pone la imagen en la antes que todo lo demas*/
+}
+
+.uno{
+    background-color: #FFD700;
+    order: 2; /* Propiedad Flexbox que indica en que orden se debe posicionar el elemento*/
+    flex:3;   /*Tamaño proporcional en base a los otros componentes*/
+}
+
+.dos{
+    background-color: #C0C0C0;
+    order: 1;
+    flex:2;
+}
+
+.tres{
+    background-color: #CD7F32;
+    order: 3;
+    flex:1; /*Tamaño por defecto*/
+}
+
+.habitaciones{
+    align-self: center; /*Alinea al elemento individualmente align-items lo hace para todos los hijos*/
+}
+
+.vertical-container{
+    height: 200px;
+    background-color: lightblue;
+    display: flex;      
+    align-items: center;        /* Alinea centrado a lo alto*/
+    justify-content: center;    /* Alinea centrado a lo ancho*/
+
+}

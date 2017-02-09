@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> <!-- container se definio con display:flex Pero todo su contenido no es flex mantiene su comportamiento Standar por lo que Aparece Titulo y abajo el texto y junto la foto -->                                
+        <div class="inmueble-item uno"> <!--Para que lo de abajo tenga las ventajas del comportamiento flex debo indicar que inmueble-item es flex junto con otras propiedades para darle el formato deseado--> 
+            <h2>Inmueble Oro</h2>
+            <small class="habitaciones">5 habitaciones</small>
+            <img src="images/imagen1.jpg" alt="">
+        </div> <!-- Por lo anterior todos estos 3 divs se ponen en una sola linea-->
+        <div class="inmueble-item dos">
+            <h2>Inmueble Plata</h2>
+            <small class="habitaciones">3 habitaciones</small>
+            <img src="images/imagen2.jpg" alt="">
+        </div>
+        <div class="inmueble-item tres">
+            <h2>Inmueble Bronce</h2>
+            <small class="habitaciones">1 habitaciones</small>
+            <img src="images/imagen3.jpg" alt="">
+        </div>
+    </div>
+    <div class="vertical-container">
+        <h1>Ranking inmuebles 2017</h1>
+    </div>
+</body>
+</html>
